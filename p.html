@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="p.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 <body>
 <!-- <body style="background-color: #414141; color: aliceblue;"> -->
+    
 
     <div>
         <h1>IMG</h1>
@@ -18,13 +20,28 @@
             <li><img width="200px" id="black" src="https://cdn.imagecomics.com/assets/i/read/radiant-black/671267/radiant-black_bb0464280e.jpg" alt="photoshop"></li>
             <li><img width="200px" id="comic" src="https://cdn.imagecomics.com/assets/i/series/1062361/LETS-TALK-COMICS-LONG-MARJORIE_147581a7be02116581a0f653533a26b1.jpg" alt="photoshop"></li>
         </ul>
+        <button onclick="calcul(2,5)">Click me!</button>
     </div>
-    <button onclick="calcul(2,5)">Click me!</button>
 
-    <a href="https://www.google.com/" id="link">Google</a>
+
+
+    <!-- camera html -->
+
+    <video id="video"></video>
+    <button id="capturebtn" >Camera <i class="fa-solid fa-camera"></i></button>
+    <canvas id="canvas"></canvas>
+    <img src="" id="img1">
+
+
+
+
+
+
 
 
     
-    <script src="promis.js"></script>
+    <script src="click.js">
+        document.getElementById('h1').innerHTML = "Hello JavaScript!";
+    </script>
 </body>
 </html>

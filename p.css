@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-/* body{
+body{
     background-color: #414141; 
     color: aliceblue
-} */
+}
 h1{
     justify-content: center;
     font: 1em sans-serif;
@@ -23,5 +23,11 @@ a#link{
 }
 
 #image{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+
+#canvas,img1{
+    display: none;
 }
