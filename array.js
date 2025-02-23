@@ -22,9 +22,35 @@ const [val,setval] = useState;
 // console.log(200);
 
 
+
+// function is a reusable block of code
+
+
 function addTwo(a,b){
-    console.log(a+b);   
-    
-    
+    // console.log(a+b);   
+     
 }
 addTwo(5,4)
+
+
+let a ="ram";
+let b = "Sita";
+
+let c = a+b;
+// console.log(c);
+
+// let na = myFunction(10,15);node array.js(5,myFunction(10,15));
+// console.log(n2);
+
+
+if (true){
+    let a2 = 5
+}
+// var a2 = 6
+
+// function text(){
+//     var a2 =7;
+    
+// }
+console.log(a2);
+// text()
