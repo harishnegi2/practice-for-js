@@ -11,8 +11,16 @@ body{
 h1{
     justify-content: center;
     font: 1em sans-serif;
-    
+    text-align: center;
+    padding: 1em;
+    text-shadow: 2px 2px 2px black;   /* XYBC x,y-axis,b-blur,c-color*/ 
 }
+
+h1::before{
+    content: "Beautify";
+    color: red;
+}
+
 
 a#link{
     text-decoration: none;
@@ -23,11 +31,61 @@ a#link{
 }
 
 #image{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1rem;
 }
 
 #canvas,img1{
     display: none;
+}
+
+.comment-box {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+.submit-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.comment-note {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.teeth, .random{
+    width : 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.random{
+    background-color: orangered;
+}
+
+a#a1{
+    color: #fff;
+    text-decoration: none;
 }

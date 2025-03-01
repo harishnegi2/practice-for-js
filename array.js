@@ -52,5 +52,21 @@ if (true){
 //     var a2 =7;
     
 // }
-console.log(a2);
+// console.log(a2);
 // text()
+
+// console.log("A"-1);
+// console.log("harish"+"100");
+
+
+var x = 4;
+// console.log(x *2) ;
+// console.log(x **2) ;
+
+let u =5;
+let v = 6;
+[u,v] = [v,u];
+console.log(u,v);
+
+
+
