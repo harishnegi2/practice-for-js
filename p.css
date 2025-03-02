@@ -31,7 +31,7 @@ a#link{
 }
 
 #image{
-    display: flex;
+    display: flex; 
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1rem;
 }
@@ -86,6 +86,26 @@ a#link{
 }
 
 a#a1{
-    color: #fff;
+    /* color: #fff; */
     text-decoration: none;
+    font-size: 90px;
+    font-weight:bold;
+    text-shadow: 2px 12px 2px black; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input#i1{
+    width: 50%;
+    padding: 5px 18px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+input::before{
+    content: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3NnbTUwMHgwNjZsZm1lazg5MHY4MTFteHBmaTduaGo1bnNvdXBlNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mf8UbIDew7e8g/giphy.gif");
 }
