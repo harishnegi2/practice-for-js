@@ -4,10 +4,130 @@
     box-sizing: border-box;
 }
 
+
 body{
-    background-color: #414141; 
-    color: aliceblue
+    /* background-color: #414141;  */
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    /* background-image: url("https://media.giphy.com/media/3o7TKz9bX9v6Zv7VWc/giphy.gif"); */
+    background-size: cover;
+
 }
+/* nav  */
+
+header {
+    background-color: #a08b8b;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    background-color: #fff;
+    height: 4px;
+    width: 30px;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .nav-links li a {
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+        border-top: 1px solid #fff;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar.active .nav-links {
+        display: flex;
+    }
+
+    .navbar.active .menu-toggle .bar:nth-child(1) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: 8px;
+    }
+
+    .navbar.active .menu-toggle .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar.active .menu-toggle .bar:nth-child(3) {
+        transform: rotate(45deg);
+        position: relative;
+        top: -8px;
+    }
+}
+
 h1{
     justify-content: center;
     font: 1em sans-serif;
@@ -109,3 +229,108 @@ input#i1{
 input::before{
     content: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3NnbTUwMHgwNjZsZm1lazg5MHY4MTFteHBmaTduaGo1bnNvdXBlNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mf8UbIDew7e8g/giphy.gif");
 }
+
+
+/* Preant and child in css */
+
+ .p{
+    width: 400px;
+    height: 400px;
+    /* background: #fff; */
+    position: relative;
+}
+
+.flower{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    /* background: orange; */
+
+    animation-name:abc;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    /* animation-direction: alternate;    */
+}
+
+@keyframes abc{
+    0%{
+        transform: rotateY(0deg);
+        /* transform: transition(0px); */
+    }
+    100%{
+        transform: rotateY(360deg);
+        /* transform: transition(100px); */
+    }
+
+}
+.c1{
+    background: blue;
+    border-bottom-left-radius: 300px;
+    border-top-right-radius: 300px;
+    bottom: 0px;
+    right: 0px;
+}
+.c2{
+    background: #dc1616;
+    border-top-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    top: 0px;
+    right: 0px;
+
+}
+.c3{
+    background: green;
+    bottom: 0px;
+    left: 0px;
+    border-top-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+
+}
+.c4{
+    background: yellow;
+    top: 0px;
+    left: 0px;
+    border-bottom-left-radius: 300px;
+    border-top-right-radius: 300px;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background: rgba(89, 1, 1, 0.619);;
+}
+.box1{
+    height: 150px;
+    width: 150px;
+    background: wheat;  
+}
+
+@keyframes abc1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+     
+}
+
+/* #c1{
+    width: 250px;
+    height: 250px;
+    background: blueviolet;
+}
+#c2{
+    width: 250px;
+    height: 250px;
+    background: olivedrab;
+}
+.p:hover #c1{
+    background: #000;
+    border-radius: 50%;
+} 
+.p:hover #c2{
+    background: #dc1616;
+    border-radius: 50%;
+}  */
