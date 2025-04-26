@@ -66,7 +66,84 @@ var x = 4;
 let u =5;
 let v = 6;
 [u,v] = [v,u];
-console.log(u,v);
+// console.log(u,v);
+
+// let arr1 = [1,2,3,4,5,6,7,8,9,10];  
+// let [a1,b1,c1,...d1] = arr1;
+// console.log(d1);
+
+
+function myFunction(a,b){
+
+    return (a*b);
+}
+let add = myFunction(5,2);
+// console.log('add 5*2 ='+ z);
+
+
+let std = ["harish","sahiba","Naresh","member"];
+// function greet(you){
+//     // return "Hello "+ you;
+    // console.log('hello '+you+' i am your big fan')
+//     // alert("hello "+std[3]+" search me")
+
+// }
+// greet(std[0])
+
+// for(i=0;i<=3;i++){
+//     greet(std[i])
+
+// }
+
+
+function myFun(name) {
+    // console.log("hello "+name);
+}
+myFun("harish")
+
+
+let myFunci = (web)=>{
+    // console.log("welcome "+web+" to my computer");
+    
+}
+myFunci('boys')
+
+
+
+// Spread/copy operator
+let op = ["AB","BC","CD","DA"]
+let alu = ["ram","shayam","sita","reena"]
+let mlu = [...alu,"sangeeta","seema","priyanka"]
+let hlu = [...op,"mute", ...alu,"tute",...op]
+// console.log(alu);
+// console.log(mlu);
+// console.log(hlu.length);
+
+
+let student ={
+    name : "Harish",
+    branch : "Computer Science Engineering",
+    subject : [{
+        first : "HTML",
+        sec : "CSS",
+        third : "Javascript",
+        four : "Database",
+        five : "SQL",
+    }],
+    rollNo : "140772504",
+    teachers : [{
+        name1 :"Raja Negi",
+        contact : "8541698530"
+    },{
+        name : "Amit Singh",
+        contact : "8579431560"
+    }]
+}
+// console.log(student);
+// console.log(student.name+" Your course is " +student.branch);
+// console.log(student.name+" Your Rollnumber is " +student.rollNo+ " Yes and No ?"); 
+// console.log(student.teachers);
+console.log(student.teachers + "" +student.subject);
 
 
 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Form Element</title>
+    <link rel="stylesheet" href="style.css">
+     <style>
+        
+     </style>
+     
+    <script>
+
+    </script>
+</head>
+
+
+<body>
+
+
+    <span class="myspan"><span>LOG</span>in</span>
+
+    
+
+<div class="container">
+    <form onsubmit="submitForm()">  
+        <input id = "v1" type="text" name="num1" placeholder="Username" />
+        <br>
+        <input id = "v2" type="text" name="num2" placeholder="Password" />
+        <br>
+        <input type="submit"  value="submit" />
+    </form> 
+</div>   
+ 
+
+    
+    
+
+
+    <script>
+        function submitForm(){
+            let num1 =document.getElementById("v1").value;
+            let num2 =document.getElementById("v2").value;
+
+            let result = parseInt(num1) + parseInt(num2)
+            alert(result);
+            
+            localStorage.setItem("key", result);
+        }
+
+
+
+        // write a js program to calculate area of triangle
+
+        // function calArea(base,height){
+        //     let area = (base * height) / 2;
+        //     // const area = 0.5 * base * height;
+
+        //     return area;
+
+        // }
+        // const base = 20;
+        // const height = 5;
+
+        // const area = calArea(base, height);
+        // console.log(`The area of the triangle is ${area}`);
+
+
+    </script>
+</body>
+</html>

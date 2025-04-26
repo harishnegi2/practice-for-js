@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Number</title>
+</head>
+<body>
+    
+    <!-- <h1>Palindrome Number</h1>
+    <input type="text" id="number" placeholder="Enter a number" /> -->
+
+
+
+
+    
+    <script>
+
+
+
+        function isPalindrome(num) {
+            // Convert the number to a string
+            const str = num.toString();
+            // Reverse the string and compare it with the original
+            return str === str.split('').reverse().join('');
+        }
+
+        // Example usage:
+        const number = 121; // Change this number to test different cases
+        if (isPalindrome(number)) {
+            console.log(`${number} is a palindrome.`);
+        } else {
+            console.log(`${number} is not a palindrome.`);
+        }
+        // Test with different numbers
+        // console.log(isPalindrome(123)); // false
+        // console.log(isPalindrome(121)); // true
+
+        // console.log(isPalindrome(12321)); // true
+        // console.log(isPalindrome(123321)); // true
+
+
+
+
+    </script>
+</body>
+</html>

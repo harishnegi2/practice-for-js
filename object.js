@@ -2,7 +2,7 @@
 // let obj = new Object(); // object constructor syntax 
 
 
-
+let key = "address"; 
 let data = {
     name: 'John',
     age: 30,
@@ -12,16 +12,31 @@ let data = {
     },
     inner : {
         name : 'Smith',
-    }
+    },
+    ['pin code'] : 246444,
+    [key] : "noida,grugram, delhi"
 }   // object literal
-// console.log(data.inner.name);
+console.log(data);
 
-let obj = {
-    name : "Seema",
-    age : 25,
-    isMarried : false,
+
+// user.name="anil";
+// user.city ="newYork"
+
+
+for(item in data){
+    console.log(`${data} : ${item[data]}`);
+    // console.log(data);
+    
 }
-obj.name = "Rajesh";
-console.log(obj.name);
+
+
+
+// let obj = {
+//     name : "Seema",
+//     age : 25,
+//     isMarried : false,
+// }
+// obj.name = "Rajesh";
+// console.log(obj);
 
 
