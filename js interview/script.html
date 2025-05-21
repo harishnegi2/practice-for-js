@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <script>
+        var h = document.createElement('header');
+        
+        // now add class selector to the header
+        h.setAttribute('class','a_header');
+
+        var m = document.createElement('div');
+        var f = document.createElement('footer');
+        h.innerHTML='Header';
+
+
+        // m.inertHTML='Div';
+        // n.innerHtml ='Nav';
+        document.body.appendChild(h);
+        document.body.appendChild(m);
+        
+        // now the class attribute to div
+        document.querySelector('header,a_header ~ div').setAttribute('class','a_main');
+        
+        var a =document.getElementsByClassName('a_main');
+        console.log(a[0]);
+        a[0].style.color='red';
+
+        
+
+        // now add the class attribute to the div
+        document.body.appendChild(f);
+
+        document.querySelector('div').innerHTML ='Main area';
+        var fe = document.querySelector('div ~ footer');
+        fe.innerHTML='Footer'; 
+
+        // create a button
+        var b = document.createElement('button');
+        b.innerHTML='Click me';
+        console.log(b);
+        
+        fe.appendChild(b);
+        var bt = document.getElementsByTagName('button');
+        console.log(bt[0]);
+        /*
+        element.addEventListener(event, function, useCapture);
+        */bt[0].addEventListener('click',function(){
+            alert('Clicked Me!'); 
+        });
+
+        
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
