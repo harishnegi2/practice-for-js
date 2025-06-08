@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+
+
+
+
+        <script>
+            // lets create a i tag? Variable initialization
+            i = document.createElement('i');
+            i.setAttribute('class', 'fas');
+            i.classList.add('fa-home');
+            console.log(i);
+            
+            document.body.appendChild(i);
+
+            // let create a scriipt tag
+            let l = document.createElement('link');
+            l.setAttribute('rel','StyleSheet');
+            l.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+            console.log(l);
+
+            document.head.appendChild(l);
+
+
+
+        </script>
+    </body>
+</html>
