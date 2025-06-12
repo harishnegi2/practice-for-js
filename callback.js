@@ -35,6 +35,6 @@ setTimeout(() => {
 // 🔄 Use Case in Array methods:
 
 let numbers = [1, 2, 3];
-numbers.forEach(function(num) {
+numbers.forEach(function(num) {  
   console.log(num * 2);
 });

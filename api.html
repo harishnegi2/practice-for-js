@@ -1,0 +1,74 @@
+<!-- JSON > JavaScript Object Notation -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API(Application Programming Interface)</title>
+ </head>
+ <body>
+    
+    
+
+
+
+
+
+
+
+    <script>
+        // https://jsonplaceholder.typicode.com/photos
+
+        class Myclass{//pascal case
+
+         // 1.Properties
+
+         // 2. Methods
+
+         // 3. Constructor
+
+            getName(name){
+               console.log('Hello My name is' + name);
+            }
+        }
+
+      //   create a new object from the Myclass
+      // syntax > let objectName = new ClassName();
+      let obj = new Myclass();
+
+      // access the method using .dot operator member selection operator
+      
+      obj.getName('John Doe');
+
+      // this is built in class for api calling
+      // XMLHttpRequest is a built in class for api calling
+
+        let xhr = new XMLHttpRequest();
+
+        
+        
+        xhr.onload = function (response){
+           console.log(response);
+         }
+          
+         // 1 function defination
+         function getMyPhoto(url,mycbfn){
+            mycbfn(url);
+       
+       
+      //  function calling
+            xhr.open('GET',url);
+            xhr.send();
+            
+            xhr.onload = function(response){
+               mycbfn(xhr.responseText)  
+            }
+         }
+             
+
+            getMyPhoto('https://jsonplaceholder.typicode.com/photos', function(url){
+                console.log('API URL is: ' + url);
+            });
+    </script>
+ </body>
+ </html>
