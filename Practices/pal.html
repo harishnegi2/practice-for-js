@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sweet Delights</title>
+</head>
+<body>
+    
+    <!-- <h1>Palindrome Number</h1>
+    <input type="text" id="number" placeholder="Enter a number" /> -->
+
+    <header>
+        <h1 class="myspan"><span>S</span>weet <span>D</span>elights</h1>
+        <nav>
+          <ul>
+            <li><a href="#cakes">Cakes</a></li>
+            <li><a href="#pastries">Pastries</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+    
+      </header>
+    
+      <section class="hero">
+        <h2>Delicious Cakes & Pastries</h2>
+        <p>Freshly baked with love, just for you!</p>
+      </section>
+    
+
+      
+      <section id="cakes" class="menu-section">
+        <h3>Our Cakes</h3>
+        <div class="grid">
+          <div class="item">
+            <img src="https://media.istockphoto.com/id/1174364953/photo/its-not-a-wedding-without-an-extravagantly-beautiful-cake.webp?a=1&b=1&s=612x612&w=0&k=20&c=UsrtvC1P-zIlerTXd4LMAJ215YhU2gF-DE-gjhRDePY=" alt="Chocolate Cake">
+            <h4>Chocolate Fudge</h4>
+          </div>
+          <div class="item">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FrZXxlbnwwfHwwfHx8MA%3D%3D">
+            <h4>Vanilla Dream</h4>
+          </div>
+        </div>
+      </section>
+    
+      <section id="pastries" class="menu-section">
+        <h3>Our Pastries</h3>
+        <div class="grid">
+          <div class="item">
+            <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FrZXxlbnwwfHwwfHx8MA%3D%3D">
+            <h4>Butter Croissant</h4>
+          </div>
+          <div class="item">
+            <img src="https://images.unsplash.com/photo-1508737804141-4c3b688e2546?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNha2V8ZW58MHx8MHx8fDA%3D">
+            <h4>Fruit Danish</h4>
+          </div>
+        </div>
+      </section>
+    
+
+
+
+          <h1>Cake & Pastry Menu</h1>
+      
+        <table>
+          <caption>Delicious Selection</caption>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Category</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Chocolate Fudge</td>
+              <td>Cake</td>
+              <td>$15</td>
+            </tr>
+            <tr>
+              <td>Strawberry Tart</td>
+              <td>Pastry</td>
+              <td>$6</td>
+            </tr>
+            <tr>
+              <td>Vanilla Dream</td>
+              <td>Cake</td>
+              <td>$12</td>
+            </tr>
+            <tr>
+              <td>Almond Croissant</td>
+              <td>Pastry</td>
+              <td>$5</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <!-- Wether api call -->
+        <!-- <div>
+          <input type="text" id="city-input" placeholder="Enter the city">
+          <button id="search-button">Search</button>
+        </div> -->
+
+        
+         
+      <section id="contact">
+        <h3>Contact Us</h3>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    
+      <footer>
+        <p>© 2025 Quality .All rights reserved.</p>
+      </footer>
+
+
+      <!-- <button onclick="location.href='#section1'"> Go to section1</button>
+      <button onclick="location.href='#section2'"> Go to section2</button>
+
+      
+    <section id="section1">section1 content</section>
+    <section id="section2">section2 content</section> -->
+
+    <!-- <script>
+
+        document.querySelector("form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("Thank you for your message!");
+        });
+
+
+        function isPalindrome(num) {
+            // Convert the number to a string
+            const str = num.toString();
+            // Reverse the string and compare it with the original
+            return str === str.split('').reverse().join('');
+        }
+
+        // Example usage:
+        const number = 121; // Change this number to test different cases
+        if (isPalindrome(number)) {
+            console.log(`${number} is a palindrome.`);
+        } else {
+            console.log(`${number} is not a palindrome.`);
+        }
+        // Test with different numbers
+        // console.log(isPalindrome(123)); // false
+        // console.log(isPalindrome(121)); // true
+
+        // console.log(isPalindrome(12321)); // true
+        // console.log(isPalindrome(123321)); // true
+
+        let papa = {
+          home : "true",
+          wallet : "$1000",
+        }
+        let beta = {
+          pesa : "true",
+        }
+        beta.__proto__ = papa;
+        // console.log(beta.home);
+        // console.log(beta.wallet);
+
+    </script> -->
+    <script src="a.js"></script>
+</body>
+</html>
